@@ -2,6 +2,8 @@ import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 import { Elysia } from "elysia";
 import { router } from "./trpc";
 
+const PORT = 3000;
+
 export const app = new Elysia()
   .get("/test", async function* () {
     let i = 0;
@@ -21,6 +23,6 @@ export const app = new Elysia()
     });
     return res;
   })
-  .listen(3000);
+  .listen(PORT);
 
-console.log("Listening on http://localhost:3000");
+console.log("Listening on", PORT);

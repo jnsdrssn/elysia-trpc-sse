@@ -12,6 +12,7 @@
     "@trpc/client": "^11.0.0-rc.330",
     "@trpc/server": "^11.0.0-rc.330",
     "elysia": "^1.1.21",
-    "logestic": "^1.2.4"
+    "logestic": "^1.2.4",
+    "zod": "^3.23.8"
   }
 }

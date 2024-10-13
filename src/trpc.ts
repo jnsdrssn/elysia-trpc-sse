@@ -10,7 +10,7 @@ export const router = t.router({
   hello: publicProcedure.query(() => {
     return "Hello, world!";
   }),
-  stream: publicProcedure.subscription(async function* () {
+  stream: publicProcedure.subscription(async function* ({ input }) {
     let i = 0;
     while (true) {
       console.log(i);
