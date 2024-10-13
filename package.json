@@ -1,6 +1,6 @@
 {
   "name": "elysia-trpc-sse",
-  "module": "src/index.ts",
+  "module": "src/elysia.ts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
